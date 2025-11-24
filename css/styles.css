@@ -15,7 +15,7 @@
     background-color: var(--background-footer);
 }
 
-.contacts-address {
+.address-link {
     color: var(--logo-light);
     font-family: Roboto;
     font-weight: 400;
@@ -24,8 +24,8 @@
     letter-spacing: 1.71;
 }
 
-.contacts-email.light,
-.contacts-phone.light {
+.email-link.light,
+.phone-link.light {
     color: rgb(255, 255, 255, 0.6);
     font-family: Roboto;
     font-weight: 400;
