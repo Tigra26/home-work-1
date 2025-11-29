@@ -19,41 +19,44 @@
     />
   </head>
   <body>
-    <header class="header-wrapper">
-      <a href="./index.html" class="logo-link" lang="en"
-        >Web<span class="logo-dark">Studio</span></a
-      >
-
+    <header class="section header-wrapper">
+      <div class="logo"></div><a href="./index.html" class="logo-link link" lang="en"
+        >Web<span class="logo-dark">Studio</span></a>        
+      </div>
+      <div class="navigation">
       <nav class="nav-menu">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link">Студія</a>
+        <ul class="nav-list list">
+          <li class="nav-items">
+            <a href="./index.html" class="nav-link link current">Студія</a>
           </li>
           <li class="nav-item">
-            <a href="./portfolio.html" class="nav-link">Портфоліо</a>
+            <a href="./portfolio.html" class="nav-link link">Портфоліо</a>
           </li>
-          <li class="nav-item"><a href="" class="nav-link">Контакти</a></li>
+          <li class="nav-items"><a href="" class="nav-link link">Контакти</a></li>
         </ul>
       </nav>
-      <ul class="contacts">
+      </div>
+      <div class="nav-contacts">
+      <ul class="contacts-list list">
         <li class="contacts-items">
-          <a href="mailto:info@devstudio.com" class="email-link" lang="en"
+          <a href="mailto:info@devstudio.com" class="contacts-link link" lang="en"
             >info@devstudio.com</a
           >
         </li>
         <li class="contacts-items">
-          <a href="tel:+38 096 111 11 11" class="phone-link"
+          <a href="tel:+38 096 111 11 11" class="contacts-link link"
             >+38 096 111 11 11</a>
         </li>
       </ul>
+      </div>
     </header>
-    <section class="hero">
+    <section class="section hero">
       <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
       <button class="hero-order btn" type="button">Замовити послугу</button>
     </section>
-    <section class="features">
-      <h2 class="section-title hidden">Особливості</h2>
-      <ul class="features-list">
+    <section class="section features">
+      <h2 class="section-title visually-hidden">Особливості</h2>
+      <ul class="features-list list">
         <li class="features-items">
           <h3 class="feautures-title">УВАГА ДО ДЕТАЛЕЙ</h3>
           <p class="feautures-text">
@@ -83,38 +86,42 @@
         </li>
       </ul>
     </section>
-    <section class="about-us">
-      <h2 class="section-title">Чим ми займаємось</h2>
-      <ul class="about-us-list">
-        <li class="about-us-item">
+    <section class="section about">
+      <h2 class="about-title">Чим ми займаємось</h2>
+      <ul class="about-list list">
+        <li class="about-item">
           <img
-            src="./images/about-us.img/about-us1.jpg"
+            src="./images/about.img/about1.jpg"
+            width="370" height="294"
             alt="Руки на клавіатурі"
-            class="about-us-icon"
+            class="about-icon"
           />
         </li>
-        <li class="about-us-item">
+        <li class="about-item">
           <img
-            src="./images/about-us.img/about-us2.jpg"
+            src="./images/about.img/about2.jpg"
+            width="370" height="294"
             alt="Модель телефону на фоні макапу телефону на екрані ноутбука"
-            class="about-us-icon"
+            class="about-icon"
           />
         </li>
-        <li class="about-us-item">
+        <li class="about-item">
           <img
-            src="./images/about-us.img/about-us3.jpg"
+            src="./images/about.img/about3.jpg"
+            width="370" height="294"
             alt="Планшет з зображенням сот у формі палітри піксельних кольорів"
-            class="about-us-icon"
+            class="about-icon"
           />
         </li>
       </ul>
     </section>
-    <section class="team">
+    <section class="section team">
       <h2 class="section-title">Наша команда</h2>
-      <ul class="team-list">
+      <ul class="team-list list">
         <li class="team-items">
           <img
             src="./images/team-members/Demyanenko-Igor.jpg"
+            width="270" height="260"
             alt="Фото Ігоря"
             class="team-icon"
           />
@@ -124,6 +131,7 @@
         <li class="team-items">
           <img
             src="./images/team-members/Repina-Olga.jpg"
+            width="270" height="260"
             alt="Фото Ольги"
             class="team-icon"
           />
@@ -133,6 +141,7 @@
         <li class="team-items">
           <img
             src="./images/team-members/Tarasov-Mykola.jpg"
+            width="270" height="260"
             alt="Фото Миколи"
             class="team-icon"
           />
@@ -142,6 +151,7 @@
         <li class="team-items">
           <img
             src="./images/team-members/Ermakov-Mykhailo.jpg"
+            width="270" height="260"
             alt="Фото Михайла"
             class="team-icon"
           />
@@ -150,31 +160,34 @@
         </li>
       </ul>
     </section>
-    <footer class="footer-wrapper">
-      <a href="./index.html" class="logo-link" lang="en"
-        >Web<span class="logo-light">Studio</span></a
-      >
-      <address class="address">
-        <ul class="address-list">
-          <li class="address-items">
-            <a
-              href="https://maps.app.goo.gl/7uukAPoV4mGSN8EEA"
-              class="address-link"
-              >м. Київ, пр-т Лесі Українки, 26</a>
-          </li>
-          <li class="address-items">
-            <a
-              href="mailto:info@devstudio.com"
-              class="email-link light"
-              lang="en"
-              >info@devstudio.com</a>
-          </li>
-          <li class="address-items">
-            <a href="tel:+38 096 111 11 11" class="phone-link light"
-              >+38 096 111 11 11</a>
-          </li>
-        </ul>
+    <footer class="section footer-wrapper">
+        <div class="logo">
+            <a href="./index.html" class="logo-link link" lang="en"
+                >Web<span class="logo-light">Studio</span></a>
+        </div>
+        <div class="footer-address">        
+        <address class="address">
+            <ul class="address-list list">
+            <li class="address-items">
+                <a
+                href="https://maps.app.goo.gl/7uukAPoV4mGSN8EEA"
+                class="address-link link"
+                >м. Київ, пр-т Лесі Українки, 26</a>
+            </li>
+            <li class="address-items">
+                <a
+                href="mailto:info@devstudio.com"
+                class="email-link link light"
+                lang="en"
+                >info@devstudio.com</a>
+            </li>
+            <li class="address-items">
+                <a href="tel:+38 096 111 11 11" class="phone-link link light"
+                >+38 096 111 11 11</a>
+            </li>
+            </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,18 +1,237 @@
-
-
 :root {
     --color-accent: #2196F3;
+    --btn-accent-cl: #188CE8; 
     --logo-dark: #000000;
     --logo-light: #FFFFFF;
-    --text-primary: #212121;
-    --text-secondary: #757575;
-    --background-body: #ffffff;
+    --text-cl-primary: #212121;
+    --text-cl-secondary: #757575;
+    --background-white: #ffffff;
     --background-grey: #F5F4FA;    
     --background-footer: #2F303A;
+    --background-filter-btn: #F5F4FA;
+;
 }
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;    
+    line-height: 1.7;
+    color: var(--text-cl-secondary);
+    background-color: var(--background-white);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+ /*
+   TODO: Navigation and Contacts styles 
+ */ 
+
+.nav-link {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 2%;
+    color: var(--text-cl-primary);
+}
+
+.nav-link.current {
+    color: var(--color-accent);
+}
+
+.nav-link:hover, 
+.nav-link:focus {
+    color: var(--color-accent);
+}   
+
+.contacts-link {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 2%;
+    color: var(--text-cl-secondary);
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    color: var(--color-accent);
+}
+
+/*
+  TODO: Hero section styles
+*/
+
+.hero { 
+    text-align: center;
+    background-image: url('../images/hero/Bg.png');
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 6%;    
+    text-transform: uppercase;
+    color: var(--logo-light);
+}
+
+.hero-order.btn {    
+    font-weight: 700;
+    font-size: 16px;    
+    line-height: 1.87;
+    letter-spacing: 6%;
+    color: var(--logo-light);
+    background-color: var(--color-accent);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 10px, 32px;
+}
+
+.btn:hover, 
+.btn:focus,
+.btn.current {
+    background-color: var(--btn-accent-cl);
+}
+
+/*
+  TODO: features section styles
+*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.feautures-title {    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: var(--text-cl-primary);
+}
+
+.feautures-text {
+    font-weight: 400;
+    font-size: 14px;    
+    line-height: 1.71;
+    letter-spacing: 3%;
+    color: var(--text-cl-secondary);
+}
+
+/*
+  TODO: About section styles
+*/
+
+.about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 3%;
+    text-align: center;
+    color: var(--text-cl-primary);
+}
+
+/*
+  TODO: Team section styles
+*/
+
+.section-title {    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 3%;
+    text-align: center;
+    color: var(--text-cl-primary);
+}
+
+.team-items {
+    background-color: var(--background-white);
+}
+
+.team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 3%;
+    text-align: center;
+    color: var(--text-cl-primary);
+}
+
+.team-description {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 3%;
+    text-align: center;
+    color: var(--text-cl-secondary);
+}
+
+/*
+  TODO: Portfolio filter styles
+*/
+
+.portfolio-items-title {    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 6%;
+    color: var(--text-cl-primary);
+}
+
+.portfolio-items-description {    
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 3%;
+color: var(--text-cl-secondary);
+}
+
+.filter-btn {    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 3%;
+    text-align: center;
+    color: var(--text-cl-primary);
+    background-color: var(--background-filter-btn);
+    box-shadow: 0px 2px 2px 0px #0000001F;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;  
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus,  
+.filter-btn.current {
+    color: var(--logo-light);
+    background-color: var(--color-accent);
+}
+
+/*
+  TODO: Footer styles
+*/
 
 .footer-wrapper {
     background-color: var(--background-footer);
+}
+
+.address-items {
+    font-style: normal;
 }
 
 .address-link {
@@ -24,9 +243,14 @@
     letter-spacing: 1.71;
 }
 
+.address-link:hover,
+.address-link:focus {
+    color: var(--color-accent);
+}
+
 .email-link.light,
 .phone-link.light {
-    color: rgb(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;    
@@ -34,6 +258,14 @@
     letter-spacing: 1.71;
 
 }
+
+.email-link.light:hover,
+.phone-link.light:hover,    
+.email-link.light:focus,
+.phone-link.light:focus {
+    color: var(--color-accent);
+}
+
 .logo-link {
     color: var(--color-accent);
     font-family: Raleway;
@@ -52,9 +284,10 @@
 }
 
 section {
-    background-color: var(--background-body);
+    background-color: var(--background-white);
 }
 
 section.team {
     background-color: var(--background-grey);
 }
+
